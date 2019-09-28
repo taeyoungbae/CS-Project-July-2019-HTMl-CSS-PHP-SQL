@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<h1> WELCOME TO BIG BROTHER BASKETBALL </h1>
+<!-- INSERT -->
+<h1> Insert Team</h1>
+<body>
+<form action="insertTeam.php" method= “post”>
+Team Name:
+<input type="text" name="teamName" >
+<br> <br>
+Wins:
+<input type="text" name="wins" >
+<br><br>
+Losses:
+<input type="text" name="losses" >
+<br><br>
+<input type="submit" value="Insert Team">
+</form>
+</body>
+
+<!-- UPDATE -->
+<h1> Update Owner</h1>
+<body>
+<form action="updateOwner.php" method= “post”>
+Old Name:
+<input type="text" name="oldOwnerName" >
+<br> <br>
+New Name:
+<input type="text" name="newOwnerName" >
+<br> <br>
+<input type="submit" value="Update">
+</form>
+</body>
+
+<!-- DELETE -->
+<h1> Delete Team</h1>
+<body>
+<form action="deleteTeam.php" method= “post”>
+Team You Want to Delete:
+<input type="text" name="deleteTeamName" >
+<br> <br>
+<input type="submit" value="Delete">
+</form>
+</body>
+
+<!-- SELECTION -->
+<h1> Select Players Who Have Over a Certain PPG</h1>
+<body>
+<form action="selectPlayer.php" method= “post”>
+Minimum PPG:
+<input type="text" name="minimumPPG" >
+<br> <br>
+<input type="submit" value="Minimum PPG">
+</form>
+</body>
+
+<!-- PROJECTION -->
+<h1> Project Coach's Record</h1>
+<body>
+<form action="projectRecords.php" method= “post”>
+Coach Name:
+<input type="text" name="projectionCoachName" >
+<br> <br>
+<input type="submit" value="Project">
+</form>
+</body>
+
+<!-- JOIN -->
+<h1> Join Query (b/w Player and Team)- Find the PPG of
+  all players whose team won an X amount of games or more</h1>
+<body>
+<form action="joinQuery.php" method= “post”>
+X:
+<input type="text" name="ppgPlayer">
+<br> <br>
+<input type="submit" value="Find PPG & Players">
+</form>
+</body>
+
+<!-- AGGREGATION -->
+<h1> Find Highest PPG on Any Given Team</h1>
+<body>
+<form action="aggregation.php" method= “post”>
+Team Name:
+<input type="text" name="teamName">
+<br> <br>
+<input type="submit" value="Find the Goat">
+</form>
+</body>
+
+<!-- NESTED AGGREGATION -->
+<h1> Retrieve Medical Staff who Treats X Amount of Players or More</h1>
+<body>
+<form action="nestedAggregation.php" method= “post”>
+X:
+<input type="text" name="medicName">
+<br> <br>
+<input type="submit" value="Find the Medic">
+</form>
+</body>
+
+<!-- DIVISION -->
+<h1> Retrieve Teams That Don't Have a Player Being Sponsored by This Brand</h1>
+<body>
+<form action="divisionSponsors.php" method= “post”>
+Brand:
+<input type="text" name="leastSponsors">
+<br> <br>
+<input type="submit" value="Find the Sponsor">
+</form>
+</body>
+
+
+
+
+</html>
